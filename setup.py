@@ -6,7 +6,7 @@ setup(
     description="Wkhtmltopdf API Wrapper",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/royaurelien/wkhtmltopdf-api",
+    url="https://github.com/CaparrosC/wkhtmltopdf-api-tests",
     author="Aurelien ROY",
     author_email="roy.aurelien@gmail.com",
     license="BSD 2-clause",
