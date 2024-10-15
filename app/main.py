@@ -134,6 +134,8 @@ def send_request(url: str, files: List, data: dict, output_filepath: str) -> Non
             response.raise_for_status()
         except requests.exceptions.HTTPError as error:
             _logger.error(error)
+            _logger.debug(error.response.status_code)
+            _logger.error(error.response.text)
             sys.exit("Error, %s", error)
 
         _logger.debug(response.headers)
