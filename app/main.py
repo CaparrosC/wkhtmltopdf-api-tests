@@ -66,8 +66,8 @@ def parse_args(input_args: List) -> dict:
         "output": args.pop(),
         "header": False,
         "footer": False,
-        "header-html": False,
-        "footer-html": False,
+        # "header-html": False,
+        # "footer-html": False,
     }
     dict_args = {}
     first_index, last_index = 0, 0
