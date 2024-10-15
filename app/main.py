@@ -66,8 +66,8 @@ def parse_args(input_args: List) -> dict:
         "output": args.pop(),
         "header": False,
         "footer": False,
-        # "header-html": False,
-        # "footer-html": False,
+        "header-html": False,
+        "footer-html": False,
     }
     dict_args = {}
     first_index, last_index = 0, 0
@@ -201,7 +201,8 @@ def main(args: list = []) -> None:
 
     url = REPORT_API_URL
     url += "/pdf"
-
+    _logger.debug("Data: %s", data)
+    _logger.debug("Parsed: %s", parsed_args["output"])
     send_request(url, files, data, parsed_args["output"])
 
     sys.exit(0)
