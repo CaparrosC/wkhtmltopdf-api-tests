@@ -203,7 +203,7 @@ def main(args: list = []) -> None:
 
     url = REPORT_API_URL
     url += "/pdf"
-    _logger.debug("Files: %s", files)
+    _logger.debug("Data: %s", data)
     send_request(url, files, data, parsed_args["output"])
 
     sys.exit(0)
